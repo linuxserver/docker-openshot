@@ -1,0 +1,45 @@
+---
+
+# project information
+project_name: openshot
+project_url: "https://openshot.org/"
+project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/openshot-logo.png"
+project_blurb: "[OpenShot]({{ project_url }}) Video Editor is an award-winning free and open-source video editor for Linux, Mac, and Windows, and is dedicated to delivering high quality video editing and animation solutions to the world."
+project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
+project_blurb_optional_extras_enabled: false
+
+# supported architectures
+available_architectures:
+  - { arch: "{{ arch_x86_64 }}", tag: "latest"}
+
+# container parameters
+common_param_env_vars_enabled: true
+param_container_name: "{{ project_name }}"
+param_usage_include_vols: true
+param_volumes:
+  - { vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/config", desc: "User's home directory in the container, stores program settings and files." }
+param_usage_include_ports: true
+param_ports:
+  - { external_port: "3000", internal_port: "3000", port_desc: "OpenShot desktop gui." }
+  - { external_port: "3001", internal_port: "3001", port_desc: "OpenShot desktop gui HTTPS." }
+opt_security_opt_param: true
+opt_security_opt_param_vars:
+  - { run_var: "seccomp=unconfined", compose_var: "seccomp:unconfined", desc: "For Docker Engine only, many modern gui apps need this to function on older hosts as syscalls are unknown to Docker." }
+# Kasm blurb settings
+kasm_blurb: true
+show_nvidia: true
+external_http_port: "3000"
+external_https_port: "3001"
+noto_fonts: "font-noto-cjk"
+# application setup block
+app_setup_block_enabled: true
+app_setup_block: |
+  The application can be accessed at:
+
+  * http://yourhost:3000/
+  * https://yourhost:3001/
+
+
+# changelog
+changelogs:
+  - { date: "23.12.24:", desc: "Initial release." }
