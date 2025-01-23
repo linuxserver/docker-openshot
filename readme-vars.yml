@@ -6,6 +6,7 @@ project_url: "https://openshot.org/"
 project_logo: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/openshot-logo.png"
 project_blurb: "[OpenShot]({{ project_url }}) Video Editor is an award-winning free and open-source video editor for Linux, Mac, and Windows, and is dedicated to delivering high quality video editing and animation solutions to the world."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
+project_categories: "Video Editor"
 project_blurb_optional_extras_enabled: false
 # supported architectures
 available_architectures:
