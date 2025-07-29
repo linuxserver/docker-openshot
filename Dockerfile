@@ -15,7 +15,7 @@ ENV TITLE=OpenShot
 RUN \
   echo "**** add icon ****" && \
   curl -o \
-    /kclient/public/icon.png \
+    /usr/share/selkies/www/icon.png \
     https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/openshot-logo.png && \
   echo "**** install packages ****" && \
   apt-get update && \
@@ -54,5 +54,5 @@ RUN \
 COPY /root /
 
 # ports and volumes
-EXPOSE 3000
+EXPOSE 3001
 VOLUME /config
