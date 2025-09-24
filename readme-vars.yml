@@ -97,7 +97,7 @@ init_diagram: |
     svc-xsettingsd -> legacy-services
   }
   Base Images: {
-    "baseimage-selkies:debianbookworm" <- "baseimage-debian:bookworm"
+    "baseimage-selkies:debiantrixie" <- "baseimage-debian:trixie"
   }
   "openshot:latest" <- Base Images
 # changelog
