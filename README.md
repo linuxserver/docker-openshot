@@ -643,6 +643,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **07.08.26:** - Rebase to Ubuntu Resolute, install from ppa.
 * **03.04.26:** - Make Wayland default disable with PIXELFLUX_WAYLAND=false.
 * **22.09.25:** - Rebase to Debian Trixie.
 * **29.07.25:** - Rebase to selkies. Breaking Change: HTTPS is now required. Either use a reverse proxy (like SWAG) with SSL cert or direct connect to port 3001 with HTTPS.
