@@ -2,13 +2,12 @@
 
 # jenkins variables
 project_name: docker-openshot
-external_type: github_stable
+external_type: na
+custom_version_command: "curl -sX GET http://ppa.launchpad.net/openshot.developers/ppa/ubuntu/dists/resolute/main/binary-amd64/Packages.gz | gunzip |grep -A 7 -m 1 'Package: openshot-qt' | awk -F ': ' '/Version/{print $2;exit}'"
 release_type: stable
 release_tag: latest
 ls_branch: main
 repo_vars:
-  - EXT_USER = 'openshot'
-  - EXT_REPO = 'openshot-qt'
   - BUILD_VERSION_ARG = 'OPENSHOT_VERSION'
   - LS_USER = 'linuxserver'
   - LS_REPO = 'docker-openshot'
