@@ -30,6 +30,10 @@ RUN \
   DEBIAN_FRONTEND=noninteractive \
   apt-get install -y --no-install-recommends \
     ${OPENSHOT} && \
+  echo "**** fix qt_api conflicts ****" && \
+  ln -sf \
+    /usr/lib/python3/dist-packages/openshot_qt/qt_api.py \
+    /usr/lib/python3/dist-packages/qt_api.py && \
   echo "**** symlink binary ****" && \
   mkdir -p /opt/openshot/usr/bin && \
   ln -s \
