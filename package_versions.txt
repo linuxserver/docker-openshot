@@ -893,7 +893,7 @@ libopengl0                                                                    1.
 libopenjp2-7                                                                  2.5.4-1ubuntu0.1                                   deb                         
 libopenmpt0t64                                                                0.8.4-1                                            deb                         
 libopenshot-audio10                                                           1.0.2+dfsg2+171+202611010121~ubuntu26.04.1         deb                         
-libopenshot33                                                                 1.1.0+dfsg2+1287+202611010300+daily~ubuntu26.04.1  deb                         
+libopenshot33                                                                 1.1.1+dfsg2+1288+202611021128+daily~ubuntu26.04.1  deb                         
 libopus0                                                                      1.6.1-1                                            deb                         
 liborc-0.4-0t64                                                               1:0.4.42-2                                         deb                         
 libp11-kit0                                                                   0.26.2-2                                           deb                         
@@ -1176,8 +1176,8 @@ nvidia-ml-py                                                                  13
 oauthlib                                                                      3.3.1                                              python                      
 ocl-icd-libopencl1                                                            2.3.4-1                                            deb                         
 openbox                                                                       3.6.1-12ubuntu3                                    deb                         
-openshot-qt                                                                   4.1.0                                              python                      
-openshot-qt                                                                   4.1.0+dfsg2+1882+202611010825~ubuntu26.04.1        deb                         
+openshot-qt                                                                   4.1.1                                              python                      
+openshot-qt                                                                   4.1.1+dfsg2+1883+202611021623~ubuntu26.04.1        deb                         
 openssh-client                                                                1:10.2p1-2ubuntu3.8                                deb                         
 openssl                                                                       3.5.5-1ubuntu3.7                                   deb                         
 openssl-provider-legacy                                                       3.5.5-1ubuntu3.7                                   deb                         
@@ -1251,7 +1251,7 @@ python3-lazr.uri                                                              1.
 python3-minimal                                                               3.14.3-0ubuntu2                                    deb                         
 python3-more-itertools                                                        10.8.0-1build1                                     deb                         
 python3-oauthlib                                                              3.3.1-1build1                                      deb                         
-python3-openshot                                                              1.1.0+dfsg2+1287+202611010300+daily~ubuntu26.04.1  deb                         
+python3-openshot                                                              1.1.1+dfsg2+1288+202611021128+daily~ubuntu26.04.1  deb                         
 python3-pip-whl                                                               25.1.1+dfsg-1ubuntu2                               deb                         
 python3-pkg-resources                                                         78.1.1-0.1build1                                   deb                         
 python3-pyparsing                                                             3.3.2-2                                            deb                         
